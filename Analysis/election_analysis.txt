@@ -1,5 +1,1 @@
-Counties in the Election
---------------------------
-Arapahoe
-Denver
-Jefferson
+Total number of votes cast is 369711
