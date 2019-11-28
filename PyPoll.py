@@ -1,16 +1,29 @@
-#the data we need to retrieve.
+
 import csv
 from  os import path
 
 file_to_load = path.join('Resources','election_results.csv',)
-with open(file_to_load) as election_data_fhand:
-    print(election_data_fhand)
-#Using WIth_AS the output: <_io.TextIOWrapper name='Resources/election_results.csv' mode='r' encoding='cp1252'>
-
-
 file_to_save = path.join('Analysis', 'election_analysis.txt')
-outputFile=open(file_to_save, 'w').write('hello world')
-#right now, this new created text is empty.
+
+#outputFile.close() only needed with out WITH statement, combine with open() fection
+with open(file_to_load) as election_data_fhand:
+# To do: read and analyze the data here
+    #Read the file object with CSV function---.reader()
+    file_reader=csv.reader(election_data_fhand)
+
+    headers=next(file_reader)
+    print(headers)
+    #for row in file_reader:
+        #print(row)
+
+
+
+#with open(file_to_save, 'w') as outputFile:
+    #outputFile.write('Counties in the Election\n')
+    #outputFile.write('--------------------------\n')
+    #outputFile.write('Arapahoe\nDenver\nJefferson')
+
+    #print(outputFile)
 
 
 
