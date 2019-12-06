@@ -1,6 +1,6 @@
 # Election_Analysis
 Using **Python** to automate the process of analyzing Election results. 
-
+---
 ## Project Background
 Create a text file of election results by **Python** to assist Colorade Board of Election in audit of the tabulated result for U.S Congressional precinct.
 
